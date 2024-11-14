@@ -31,9 +31,73 @@ header {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Creates responsive columns */
     gap: 50px; /* Adds space between grid items */
     justify-items: center; /* Centers buttons in each grid cell */
+    
 }
 
 .buttons button {
     padding: 10px 20px; /* Adds padding inside the buttons */
+    background-color: white;
+    border: 1px solid;
+    border-radius: 3px;
     /* You can also add styles for background, border, etc. */
 }
+
+@keyframes spin-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#button1 {
+    
+    animation: spin-animation 2s linear infinite;
+    animation-play-state: paused;
+    
+
+}
+
+
+@keyframes color-animation {
+    0% {
+        background-color: white;
+        
+    }
+
+    16% {
+        background-color: green;
+    }
+
+    30% {
+        background-color: blue;
+    }
+
+    44% {
+        background-color: red;
+    }
+
+    58% {
+        background-color: purple;
+    }
+
+    72% {
+        background-color: yellow;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+
+
+
+
+
+#button2 {
+    animation: color-animation 2s linear infinite;
+    animation-play-state: paused;
+}
+
